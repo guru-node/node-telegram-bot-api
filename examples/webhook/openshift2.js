@@ -10,7 +10,7 @@
  * This example is kept here for historical/educational purposes.
  * No changes are expected to be made to the source code below.
  *
- * See https://github.com/yagop/node-telegram-bot-api/issues/426 for
+ * See https://github.com/guru-node/guru-node/telegram-bot/issues/426 for
  * more information.
  * !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  */

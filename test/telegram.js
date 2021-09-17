@@ -996,7 +996,7 @@ describe('TelegramBot', function telegramSuite() {
     });
     it('should set the chat description', function test() {
       const random = Math.floor(Math.random() * 1000);
-      const description = `node-telegram-bot-api test group (random: ${random})`;
+      const description = `@guru-node/telegram-bot test group (random: ${random})`;
       return bot.setChatDescription(GROUPID, description).then(resp => {
         assert.strictEqual(resp, true);
       });

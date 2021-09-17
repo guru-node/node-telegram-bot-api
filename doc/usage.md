@@ -257,4 +257,4 @@ bot.on('webhook_error', (error) => {
 [inline-query]:https://core.telegram.org/bots/api#inlinequery
 [chosen-inline-result]:https://core.telegram.org/bots/api#choseninlineresult
 [inline-mode]:https://core.telegram.org/bots/api#inline-mode
-[issue-63]:https://github.com/yagop/node-telegram-bot-api/issues/63
+[issue-63]:https://github.com/guru-node/guru-node/telegram-bot/issues/63

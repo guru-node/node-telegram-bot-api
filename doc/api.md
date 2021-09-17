@@ -150,13 +150,13 @@ Emits `message` when a message arrives.
 <a name="TelegramBot+on"></a>
 
 ### telegramBot.on(event, listener)
-Add listener for the specified [event](https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#events).
+Add listener for the specified [event](https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#events).
 This is the usual `emitter.on()` method.
 
 **Kind**: instance method of [<code>TelegramBot</code>](#TelegramBot)  
 **See**
 
-- [Available events](https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#events)
+- [Available events](https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#events)
 - https://nodejs.org/api/events.html#events_emitter_on_eventname_listener
 
 
@@ -287,7 +287,7 @@ that is being deprecated.
 **See**
 
 - https://core.telegram.org/bots/api#setwebhook
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -423,7 +423,7 @@ Send photo
 **See**
 
 - https://core.telegram.org/bots/api#sendphoto
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -442,7 +442,7 @@ Send audio
 **See**
 
 - https://core.telegram.org/bots/api#sendaudio
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -475,7 +475,7 @@ Send Document
 **See**
 
 - https://core.telegram.org/bots/api#sendDocument
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -509,7 +509,7 @@ Use this method to send video files, Telegram clients support mp4 videos (other 
 **See**
 
 - https://core.telegram.org/bots/api#sendvideo
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -528,7 +528,7 @@ Use this method to send animation files (GIF or H.264/MPEG-4 AVC video without s
 **See**
 
 - https://core.telegram.org/bots/api#sendanimation
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -548,7 +548,7 @@ Use this method to send rounded square videos of upto 1 minute long.
 **See**
 
 - https://core.telegram.org/bots/api#sendvideonote
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -567,7 +567,7 @@ Send voice
 **See**
 
 - https://core.telegram.org/bots/api#sendvoice
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -1630,14 +1630,14 @@ Use this method to send a group of photos or videos as an album.
 On success, an array of the sent [Messages](https://core.telegram.org/bots/api#message)
 is returned.
 
-If you wish to [specify file options](https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files),
+If you wish to [specify file options](https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files),
 add a `fileOptions` property to the target input in `media`.
 
 **Kind**: instance method of [<code>TelegramBot</code>](#TelegramBot)  
 **See**
 
 - https://core.telegram.org/bots/api#sendmediagroup
-- https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+- https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
 
 
 | Param | Type | Description |
@@ -1672,15 +1672,15 @@ instances.
 
 **Example**  
 ```js
-const TelegramBot = require('node-telegram-bot-api');
+const TelegramBot = require('@guru-node/telegram-bot');
 TelegramBot.Promise = myPromise;
 ```
 * * *
 
 
-[usage-sending-files-performance]:https://github.com/yagop/node-telegram-bot-api/tree/master/doc/usage.md#sending-files-performance
-[setWebHook-v0.25.0]:https://github.com/yagop/node-telegram-bot-api/tree/4e5a493cadfaad5589a8d79e55d9e0d103000ce4#telegrambotsetwebhookurl-cert
-[getUpdates-v0.25.0]:https://github.com/yagop/node-telegram-bot-api/tree/4e5a493cadfaad5589a8d79e55d9e0d103000ce4#TelegramBot+getUpdates
-[getUserProfilePhotos-v0.25.0]:https://github.com/yagop/node-telegram-bot-api/tree/4e5a493cadfaad5589a8d79e55d9e0d103000ce4#TelegramBot+getUserProfilePhotos
-[answerCallbackQuery-v0.27.1]:https://github.com/yagop/node-telegram-bot-api/blob/v0.27.1/doc/api.md#TelegramBot+answerCallbackQuery
-[answerCallbackQuery-v0.29.0]:https://github.com/yagop/node-telegram-bot-api/blob/v0.29.0/doc/api.md#TelegramBot+answerCallbackQuery
+[usage-sending-files-performance]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/doc/usage.md#sending-files-performance
+[setWebHook-v0.25.0]:https://github.com/guru-node/guru-node/telegram-bot/tree/4e5a493cadfaad5589a8d79e55d9e0d103000ce4#telegrambotsetwebhookurl-cert
+[getUpdates-v0.25.0]:https://github.com/guru-node/guru-node/telegram-bot/tree/4e5a493cadfaad5589a8d79e55d9e0d103000ce4#TelegramBot+getUpdates
+[getUserProfilePhotos-v0.25.0]:https://github.com/guru-node/guru-node/telegram-bot/tree/4e5a493cadfaad5589a8d79e55d9e0d103000ce4#TelegramBot+getUserProfilePhotos
+[answerCallbackQuery-v0.27.1]:https://github.com/guru-node/guru-node/telegram-bot/blob/v0.27.1/doc/api.md#TelegramBot+answerCallbackQuery
+[answerCallbackQuery-v0.29.0]:https://github.com/guru-node/guru-node/telegram-bot/blob/v0.29.0/doc/api.md#TelegramBot+answerCallbackQuery

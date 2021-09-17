@@ -1,5 +1,5 @@
 const errors = require('./errors');
-const debug = require('debug')('node-telegram-bot-api');
+const debug = require('debug')('@guru-node/telegram-bot');
 const https = require('https');
 const http = require('http');
 const fs = require('fs');

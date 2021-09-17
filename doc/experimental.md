@@ -14,15 +14,15 @@ Try them out and give feedback to support stabilizing them.
 
 * Support API method `deleteMessage`
 
-Open issues tagged `experimental`: [link](https://github.com/yagop/node-telegram-bot-api/issues?q=is%3Apr+is%3Aopen+label%3Aexperimental)
+Open issues tagged `experimental`: [link](https://github.com/guru-node/guru-node/telegram-bot/issues?q=is%3Apr+is%3Aopen+label%3Aexperimental)
 
 
 <a name="installation"></a>
 ## installation:
 
 ```bash
-$ npm install yagop/node-telegram-bot-api#experimental
+$ npm install guru-node/guru-node/telegram-bot#experimental
 ```
 
 
-[api-experimental]:https://github.com/yagop/node-telegram-bot-api/tree/experimental/doc/api.md
+[api-experimental]:https://github.com/guru-node/guru-node/telegram-bot/tree/experimental/doc/api.md

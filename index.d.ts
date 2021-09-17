@@ -1,5 +1,5 @@
-// Type definitions for node-telegram-bot-api 0.51
-// Project: https://github.com/yagop/node-telegram-bot-api
+// Type definitions for @guru-node/telegram-bot 0.51
+// Project: https://github.com/guru-node/guru-node/telegram-bot
 // Definitions by: Alex Muench <https://github.com/ammuench>
 //                 Agadar <https://github.com/agadar>
 //                 Giorgio Garasto <https://github.com/Dabolus>
@@ -1127,7 +1127,7 @@ declare class TelegramBot extends EventEmitter {
 
     sendPoll(chatId: number | string, question: string, pollOptions: ReadonlyArray<string>, options?: TelegramBot.SendPollOptions): Promise<TelegramBot.Message>;
 
-    // `messageId` was referred to as `pollId` in `node-telegram-bot-api/src/telegram.js`,
+    // `messageId` was referred to as `pollId` in `@guru-node/telegram-bot/src/telegram.js`,
     // but actually `pollId` is another thing, and I believe that's a mistake.
     // see https://core.telegram.org/bots/api#stoppoll for more info.
     stopPoll(chatId: number | string, messageId: number, options?: TelegramBot.StopPollOptions): Promise<TelegramBot.Poll>;

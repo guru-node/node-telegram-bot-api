@@ -25,7 +25,7 @@
     "test": "npm run eslint && istanbul cover ./node_modules/mocha/bin/_mocha",
     "upgrade": "ncu -u && npm i"
   },
-  "author": "Yago Pérez <yagoperezs@gmail.com>",
+  "author": "Pavel <pavhov93@gmail.com>",
   "license": "MIT",
   "engines": {
     "node": ">=0.12"
@@ -74,12 +74,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yagop/node-telegram-bot-api.git"
+    "url": "https://github.com/guru-node/guru-node/telegram-bot.git"
   },
   "bugs": {
-    "url": "https://github.com/yagop/node-telegram-bot-api/issues"
+    "url": "https://github.com/guru-node/telegram-bot/issues"
   },
-  "homepage": "https://github.com/yagop/node-telegram-bot-api",
+  "homepage": "https://github.com/guru-node/telegram-bot",
   "contributors": [
     {
       "name": "Pavel",

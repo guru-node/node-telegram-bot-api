@@ -4,7 +4,7 @@ require('array.prototype.findindex').shim(); // for Node.js v0.x
 const errors = require('./errors');
 const TelegramBotWebHook = require('./telegramWebHook');
 const TelegramBotPolling = require('./telegramPolling');
-const debug = require('debug')('node-telegram-bot-api');
+const debug = require('debug')('@guru-node/telegram-bot');
 const EventEmitter = require('eventemitter3');
 const fileType = require('file-type');
 const request = require('request-promise');
@@ -16,7 +16,7 @@ const path = require('path');
 const URL = require('url');
 const fs = require('fs');
 const pump = require('pump');
-const deprecate = require('depd')('node-telegram-bot-api');
+const deprecate = require('depd')('@guru-node/telegram-bot');
 
 const _messageTypes = [
   'text',
@@ -98,7 +98,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Function} customPromise
    *
    * @example
-   * const TelegramBot = require('node-telegram-bot-api');
+   * const TelegramBot = require('@guru-node/telegram-bot');
    * TelegramBot.Promise = myPromise;
    */
   static set Promise(customPromise) {
@@ -106,16 +106,16 @@ class TelegramBot extends EventEmitter {
   }
 
   /**
-   * Add listener for the specified [event](https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#events).
+   * Add listener for the specified [event](https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#events).
    * This is the usual `emitter.on()` method.
    * @param  {String} event
    * @param  {Function} listener
-   * @see {@link https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#events|Available events}
+   * @see {@link https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#events|Available events}
    * @see https://nodejs.org/api/events.html#events_emitter_on_eventname_listener
    */
   on(event, listener) {
     if (_deprecatedMessageTypes.indexOf(event) !== -1) {
-      const url = 'https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#events';
+      const url = 'https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#events';
       deprecate(`Events ${_deprecatedMessageTypes.join(',')} are deprecated. See the updated list of events: ${url}`);
     }
     super.on(event, listener);
@@ -288,7 +288,7 @@ class TelegramBot extends EventEmitter {
    */
   _formatSendData(type, data, fileOptions = {}) {
     const deprecationMessage =
-      'See https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files' +
+      'See https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files' +
       ' for more information on how sending files has been improved and' +
       ' on how to disable this deprecation message altogether.';
     let filedata = data;
@@ -493,7 +493,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [fileOptions] Optional file related meta-data
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#setwebhook
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   setWebHook(url, options = {}, fileOptions = {}) {
     /* The older method signature was setWebHook(url, cert).
@@ -766,7 +766,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [fileOptions] Optional file related meta-data
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#sendphoto
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendPhoto(chatId, photo, options = {}, fileOptions = {}) {
     const opts = {
@@ -792,7 +792,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [fileOptions] Optional file related meta-data
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#sendaudio
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendAudio(chatId, audio, options = {}, fileOptions = {}) {
     const opts = {
@@ -840,7 +840,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [fileOptions] Optional file related meta-data
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#sendDocument
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendDocument(chatId, doc, options = {}, fileOptions = {}) {
     const opts = {
@@ -891,7 +891,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [fileOptions] Optional file related meta-data
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#sendvideo
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendVideo(chatId, video, options = {}, fileOptions = {}) {
     const opts = {
@@ -917,7 +917,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [fileOptions] Optional file related meta-data
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#sendanimation
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendAnimation(chatId, animation, options = {}, fileOptions = {}) {
     const opts = {
@@ -944,7 +944,7 @@ class TelegramBot extends EventEmitter {
    * @return {Promise}
    * @info The length parameter is actually optional. However, the API (at time of writing) requires you to always provide it until it is fixed.
    * @see https://core.telegram.org/bots/api#sendvideonote
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendVideoNote(chatId, videoNote, options = {}, fileOptions = {}) {
     const opts = {
@@ -970,7 +970,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [fileOptions] Optional file related meta-data
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#sendvoice
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendVoice(chatId, voice, options = {}, fileOptions = {}) {
     const opts = {
@@ -2173,7 +2173,7 @@ class TelegramBot extends EventEmitter {
    * On success, an array of the sent [Messages](https://core.telegram.org/bots/api#message)
    * is returned.
    *
-   * If you wish to [specify file options](https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files),
+   * If you wish to [specify file options](https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files),
    * add a `fileOptions` property to the target input in `media`.
    *
    * @param  {String} chatId Unique identifier for the target chat or username of the target channel (in the format `@channelusername`)
@@ -2181,7 +2181,7 @@ class TelegramBot extends EventEmitter {
    * @param  {Object} [options] Additional Telegram query options
    * @return {Promise}
    * @see https://core.telegram.org/bots/api#sendmediagroup
-   * @see https://github.com/yagop/node-telegram-bot-api/blob/master/doc/usage.md#sending-files
+   * @see https://github.com/guru-node/guru-node/telegram-bot/blob/master/doc/usage.md#sending-files
    */
   sendMediaGroup(chatId, media, options = {}) {
     const opts = {
