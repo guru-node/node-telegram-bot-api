@@ -1,14 +1,14 @@
-<h1 align="center">Telegram Bot</h1>
+<h1 align="center">Node.js Telegram Bot API</h1>
 
 <div align="center">
 
 Node.js module to interact with the official [Telegram Bot API](https://core.telegram.org/bots/api).
 
 
-[![Bot API](https://img.shields.io/badge/Bot%20API-v.5.2-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
-[![npm package](https://img.shields.io/npm/v/@guru-node/telegram-bot?logo=npm&style=flat-square)](https://www.npmjs.org/package/@guru-node/telegram-bot)
-[![Build Status](https://img.shields.io/travis/guru-node/guru-node/telegram-bot/master?style=flat-square&logo=travis)](https://travis-ci.org/guru-node/guru-node/telegram-bot)
-[![Coverage Status](https://img.shields.io/codecov/c/github/guru-node/guru-node/telegram-bot?style=flat-square&logo=codecov)](https://codecov.io/gh/guru-node/guru-node/telegram-bot)
+[![Bot API](https://img.shields.io/badge/Bot%20API-v.5.5-00aced.svg?style=flat-square&logo=telegram)](https://core.telegram.org/bots/api)
+[![npm package](https://img.shields.io/npm/v/node-telegram-bot-api?logo=npm&style=flat-square)](https://www.npmjs.org/package/node-telegram-bot-api)
+[![Build Status](https://img.shields.io/travis/yagop/node-telegram-bot-api/master?style=flat-square&logo=travis)](https://travis-ci.org/yagop/node-telegram-bot-api)
+[![Coverage Status](https://img.shields.io/codecov/c/github/yagop/node-telegram-bot-api?style=flat-square&logo=codecov)](https://codecov.io/gh/yagop/node-telegram-bot-api)
 
 [![https://telegram.me/node_telegram_bot_api](https://img.shields.io/badge/💬%20Telegram-Channel-blue.svg?style=flat-square)](https://telegram.me/node_telegram_bot_api)
 [![https://telegram.me/ntbasupport](https://img.shields.io/badge/💬%20Telegram-Group-blue.svg?style=flat-square)](https://telegram.me/ntbasupport)
@@ -85,7 +85,7 @@ We also have a [Telegram  group][tg-group] to discuss issues related to this lib
 Some things built using this library that might interest you:
 
 * [tgfancy](https://github.com/GochoMugo/tgfancy): A fancy, higher-level wrapper for Telegram Bot API
-* [@guru-node/telegram-bot-middleware](https://github.com/idchlife/@guru-node/telegram-bot-middleware): Middleware for @guru-node/telegram-bot
+* [node-telegram-bot-api-middleware](https://github.com/idchlife/node-telegram-bot-api-middleware): Middleware for node-telegram-bot-api
 * [teleirc](https://github.com/FruitieX/teleirc): A simple Telegram ↔ IRC gateway
 * [bot-brother](https://github.com/SerjoPepper/bot-brother): Node.js library to help you easily create telegram bots
 * [redbot](https://github.com/guidone/node-red-contrib-chatbot): A Node-RED plugin to create telegram bots visually
@@ -97,15 +97,15 @@ Some things built using this library that might interest you:
 
 Copyright © 2019 Yago
 
-[usage]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/doc/usage.md
-[examples]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/examples
-[help]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/doc/help.md
-[tutorials]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/doc/tutorials.md
-[api-dev]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/doc/api.md
-[api-release]:https://github.com/guru-node/guru-node/telegram-bot/tree/release/doc/api.md
-[api-experimental]:https://github.com/guru-node/guru-node/telegram-bot/tree/experimental/doc/api.md
-[contributing]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/CONTRIBUTING.md
-[contributors]:https://github.com/guru-node/guru-node/telegram-bot/graphs/contributors
-[experimental]:https://github.com/guru-node/guru-node/telegram-bot/tree/master/doc/experimental.md
+[usage]:https://github.com/guru-node/telegram-bot/tree/master/doc/usage.md
+[examples]:https://github.com/guru-node/telegram-bot/tree/master/examples
+[help]:https://github.com/guru-node/telegram-bot/tree/master/doc/help.md
+[tutorials]:https://github.com/guru-node/telegram-bot/tree/master/doc/tutorials.md
+[api-dev]:https://github.com/guru-node/telegram-bot/tree/master/doc/api.md
+[api-release]:https://github.com/guru-node/telegram-bot/tree/release/doc/api.md
+[api-experimental]:https://github.com/guru-node/telegram-bot/tree/experimental/doc/api.md
+[contributing]:https://github.com/guru-node/telegram-bot/tree/master/CONTRIBUTING.md
+[contributors]:https://github.com/guru-node/telegram-bot/graphs/contributors
+[experimental]:https://github.com/guru-node/telegram-bot/tree/master/doc/experimental.md
 [tg-channel]:https://telegram.me/node_telegram_bot_api
 [tg-group]:https://telegram.me/ntbasupport
